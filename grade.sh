@@ -45,7 +45,7 @@ then
     exit
 fi 
 
-java -cp $CPATH org.junit.runner.JUnitCore grading-area/TestListExamples > output.txt
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > output.txt
 
 failureString=`grep "FAILURES!!!" output.txt`
 
